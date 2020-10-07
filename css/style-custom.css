@@ -10,3 +10,5 @@ a:hover{color:var(--primary-light);}
 .text-highlight{color:white;}
 .social-icons .social-icon:hover{background-color:var(--primary);}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);}
+.carousel{position:relative;}
+.carousel .text{position:absolute; bottom:0; left:0; right:0; z-index:999; text-align:center; font-size:24px; padding:15px 0; background:rgba(255,255,255,0.3);}
