@@ -1,0 +1,12 @@
+:root{
+    --primary: rgba(105,50,168,1);
+    --primary-light: #af7bc9;
+}
+
+body{background-color:#333; color:#ddd;}
+a{color:var(--primary);}
+a:hover{color:var(--primary-light);}
+.navbar{background-color:var(--primary);}
+.text-highlight{color:white;}
+.social-icons .social-icon:hover{background-color:var(--primary);}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);}
