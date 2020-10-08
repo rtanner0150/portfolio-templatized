@@ -17,3 +17,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);
     .carousel .text a{color:white;}
 }
 .project .image{text-align:center;}
+
+.contact-form{background:#eee; padding:15px;}
+.contact-toggle{display:none;}
+.contact-form h4{color:var(--primary);}
+.contact-form label{color:#222; display:block;}
+.contact-form input, .contact-form textarea{margin-left:50px; width:60%; float:right;}
+.contact-form hr{border-color:#eee;}
