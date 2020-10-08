@@ -44,6 +44,6 @@ header("Location: thank-you.html");
 }
 else
 {
-header("Location: error.html?varname=$errors");
+header("Location: error.html");
 }
 ?>
