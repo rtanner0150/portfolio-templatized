@@ -26,9 +26,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);
 .contact-form hr{border-color:#eee;}
 .contact-form .btn{width:100%;}
 @media (min-width:992px){
-    .contact-wrapper{position:fixed; z-index:1000; top:300px; right:-490px; width:500px; transition:right 1s;}
-    .contact-wrapper.open{right:-15px;}
-    .contact-toggle{display:block; background:#eee; color:var(--primary); text-align:center; width:120px; position:absolute; left:-108px; z-index:2000; padding:10px;}
+    .contact-wrapper{position:fixed; z-index:1100; bottom:0; left:-490px; width:500px; transition:left 1s;}
+    .contact-wrapper.open{left:-15px;}
+    .contact-toggle{display:block; background:#eee; color:var(--primary); text-align:center; width:120px; position:absolute; right:-108px; bottom:0; z-index:2000; padding:10px;}
     .contact-toggle:hover{cursor:pointer; background:var(--primary); }
     .contact-toggle:hover h4{color:#eee;}
 }
