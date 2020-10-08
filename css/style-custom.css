@@ -20,11 +20,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);
 
 .contact-form{background:#eee; padding:15px;}
 .contact-toggle{display:none;}
-.contact-form h4{color:var(--primary);}
+.contact-toggle h4{color:var(--primary); margin:0;}
 .contact-form label{color:#222; display:block;}
 .contact-form input, .contact-form textarea{margin-left:50px; width:60%; float:right;}
 .contact-form hr{border-color:#eee;}
 .contact-form .btn{width:100%;}
 @media (min-width:992px){
-    
+    .contact-wrapper{position:fixed; z-index:1000; top:300px; right:-490px; width:500px; transition:right 1s;}
+    .contact-wrapper.open{right:-15px;}
+    .contact-toggle{display:block; background:#eee; color:var(--primary); text-align:center; width:120px; position:absolute; left:-108px; z-index:2000; padding:10px;}
+    .contact-toggle:hover{cursor:pointer; background:var(--primary); }
+    .contact-toggle:hover h4{color:#eee;}
 }
