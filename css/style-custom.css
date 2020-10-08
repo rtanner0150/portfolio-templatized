@@ -24,3 +24,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);
 .contact-form label{color:#222; display:block;}
 .contact-form input, .contact-form textarea{margin-left:50px; width:60%; float:right;}
 .contact-form hr{border-color:#eee;}
+.contact-form .btn{width:100%;}
+@media (min-width:992px){
+    
+}
