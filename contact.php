@@ -42,5 +42,8 @@ mail($to,$email_subject,$email_body,$headers);
 header("Location: thank-you.html");
 
 }
-
+else
+{
+header("Location: error.html");
+}
 ?>
