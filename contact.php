@@ -1,6 +1,5 @@
 <?php
 
-require "vendor/autoload.php";
 session_start();
 $errors = "";
 
@@ -34,7 +33,6 @@ $errors .= "\n Error: Invalid email address";
 
 if( empty($errors))
 {
-
 $to = $myemail;
 $email_subject = "Contact form submission: $name";
 $email_body = "You have received a new message. ".
@@ -42,14 +40,6 @@ $email_body = "You have received a new message. ".
 "Email: $email_address\n Message \n $message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
-
-$email_obj = new \SendGrid\Mail\Mail();
-$email_obj->setFrom($email_address, $name);
-$email_obj->setSubject($email_subject);
-$email_obj->addTo($myemail, "Ryan Tanner");
-$email_obj->addContent("text/plain",$email_body);
-$sendgrid = new \SendGrid(getenv["SENDGRID_API_KEY"]);
-
 $accepted = mail($to,$email_subject,$email_body,$headers);
 
 //redirect to the ‘thank you’ page
