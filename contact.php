@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 $errors = "";
 
 $myemail = "rtanner0150@skilledkc.org";
@@ -44,6 +45,7 @@ header("Location: thank-you.html");
 }
 else
 {
-header("Location: error.html");
+$_SESSION['errors'] = $errors;
+header("Location: error.php");
 }
 ?>
