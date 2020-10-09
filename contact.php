@@ -4,7 +4,9 @@ session_start();
 $errors = "";
 
 $myemail = "rtanner0150@skilledkc.org";
-
+if(!isset($_POST["submit"])){
+    $errors .= "\n Not submitted?"
+}
 if(empty($_POST["contact-name"]) || empty($_POST["contact-email"]) || empty($_POST["contact-message"]))
 
 {
