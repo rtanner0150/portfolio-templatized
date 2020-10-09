@@ -43,8 +43,11 @@ $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 
 //redirect to the ‘thank you’ page
-
-header("Location: thank-you.html");
+$_SESSION['name'] = $name;
+$_SESSION['email'] = $email_address;
+$_SESSION['message'] = $message;
+$_SESSION['my-email'] = $myemail;
+header("Location: thank-you.php");
 
 }
 else
