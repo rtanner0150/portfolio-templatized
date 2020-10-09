@@ -12,11 +12,11 @@ $errors .= "\n Error: all fields are required";
 
 }
 
-$name = $_POST[‘contact-name’];
+$name = $_POST["contact-name"];
 
-$email_address = $_POST[’contact-email’];
+$email_address = $_POST["contact-email"];
 
-$message = $_POST[‘contact-message’];
+$message = $_POST["contact-message"];
 
 if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
 
