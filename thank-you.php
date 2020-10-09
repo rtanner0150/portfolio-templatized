@@ -1,8 +1,9 @@
 Message sent!
 <?php 
 session_start();
-echo 'name: ' . $_SESSION['name'];
-echo 'email: ' . $_SESSION['email'];
-echo 'message: ' . $_SESSION['message'];
-echo 'my email: ' . $_SESSION['my-email'];
+echo '\nname: ' . $_SESSION['name'];
+echo '\nemail: ' . $_SESSION['email'];
+echo '\nmessage: ' . $_SESSION['message'];
+echo '\nmy email: ' . $_SESSION['my-email'];
+echo '\naccepted?: ' . $_SESSION['accepted'];
 ?>

@@ -40,13 +40,14 @@ $email_body = "You have received a new message. ".
 "Email: $email_address\n Message \n $message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$email_body,$headers);
+$accepted = mail($to,$email_subject,$email_body,$headers);
 
 //redirect to the ‘thank you’ page
 $_SESSION['name'] = $name;
 $_SESSION['email'] = $email_address;
 $_SESSION['message'] = $message;
 $_SESSION['my-email'] = $myemail;
+$_SESSION['accepted'] = $accepted;
 header("Location: thank-you.php");
 
 }
