@@ -42,8 +42,8 @@
 
 
     //CUSTOM SCRIPTS RT
-    $('.contact-toggle').click(function(){
-        jQuery('.contact-wrapper').toggleClass('open');
-    });
+    // $('.contact-toggle').click(function(){
+    //     jQuery('.contact-wrapper').toggleClass('open');
+    // });
 
 })(jQuery); // End of use strict
