@@ -39,4 +39,11 @@
     $("body").scrollspy({
         target: "#sideNav",
     });
+
+
+    //CUSTOM SCRIPTS RT
+    // $('.contact-toggle').click(function(){
+    //     jQuery('.contact-wrapper').toggleClass('open');
+    // });
+
 })(jQuery); // End of use strict
