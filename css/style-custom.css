@@ -34,3 +34,5 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{color:var(--primary-light);
 }
 
 .image .bordered{border:2px solid white;}
+
+section.resume-section{padding-top:3rem; padding-bottom:3rem;}
